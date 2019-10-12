@@ -67,7 +67,11 @@ function App() {
   }
 
   // Return some basic loading text
-  if (loading) return "Loading..."
+  if (loading) {
+    return (
+      <div class="loading loading-lg"></div>
+    )
+  }
 
   return (
     // In JavaScript you can only return one object
